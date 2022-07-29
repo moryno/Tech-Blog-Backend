@@ -42,6 +42,6 @@ app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
 
-app.listen(process.env.PORT || 3030, () =>
+app.listen(process.env.PORT || 3000, () =>
   console.log("Server running at port 3030")
 );
