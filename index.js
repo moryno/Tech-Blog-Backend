@@ -37,20 +37,11 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
   res.status(200).json("File has been uploaded");
 });
 
-app.get("/", (req, res, next) => {
-  res.status(200).json({
-    status: "success",
-    data: {
-      name: "tech-blog-backend",
-      version: "0.1.0",
-    },
-  });
-});
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
 
-app.listen(process.env.PORT || 3000, () =>
-  console.log("Server running at port 3000")
+app.listen(process.env.PORT || 3030, () =>
+  console.log("Server running at port 3030")
 );
