@@ -21,7 +21,7 @@ const postSchema = new mongoose.Schema(
     },
     categories: {
       type: Array,
-      required: false,
+      required: true,
     },
   },
   { timestamps: true }
