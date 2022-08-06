@@ -23,6 +23,10 @@ const postSchema = new mongoose.Schema(
       type: Array,
       required: true,
     },
+    votes: {
+      type: Number,
+      default: 0,
+    },
   },
   { timestamps: true }
 );
