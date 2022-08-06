@@ -24,7 +24,7 @@ const postSchema = new mongoose.Schema(
       required: true,
     },
     votes: {
-      type: Number,
+      type: Numbers,
       default: 0,
     },
   },
